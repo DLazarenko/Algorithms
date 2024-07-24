@@ -1,3 +1,5 @@
+import priorityQueue.In;
+
 public class Main {
     public static void main(String[] args) {
         // Read strings from standard input, sort them, and print.
@@ -14,6 +16,9 @@ public class Main {
 //        sort(a);
 //        assert isSorted(a);
 //        show(a);
+        In in = new In(".priorityQueue/1.txt");
+        System.out.println(in.readString());
+        System.out.println(in.readString());
         Comparable[] a = new Comparable[16];
         a[0] = "K";
         a[1] = "R";
