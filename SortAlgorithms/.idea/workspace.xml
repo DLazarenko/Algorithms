@@ -41,15 +41,19 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/admin/Desktop/Algorithms/Algorithms_implementation/SortAlgorithms/src/priorityQueueSite",
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/priorityQueueSite" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="priorityQueue" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.priorityQueue.Multiway">
+  <component name="RunManager" selected="Application.priorityQueueSite.Multiway">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -67,6 +71,12 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="priorityQueueSite.Multiway" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="priorityQueueSite.Multiway" />
+      <module name="SortAlgorithms" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;src/priorityQueueSite/1.txt&quot; &quot;src/priorityQueueSite/2.txt&quot; &quot;src/priorityQueueSite/3.txt&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="priorityQueue.Main" type="Application" factoryName="Application">
@@ -87,6 +97,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.priorityQueueSite.Multiway" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.priorityQueue.Main" />
       <item itemvalue="Application.priorityQueue.Multiway" />
@@ -94,4 +105,15 @@
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/priorityQueueSite/Multiway.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>

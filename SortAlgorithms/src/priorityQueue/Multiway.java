@@ -11,7 +11,7 @@ public class Multiway {
 //        }
 
 
-        //merge(streams);
+        merge(streams);
 }
 
     public static void merge(In[] streams)
@@ -26,6 +26,12 @@ public class Multiway {
             System.out.println(pq.min());
             int i = pq.delMin();
             if (!streams[i].isEmpty())
+                System.out.println(streams[i] + "*********");
                 pq.insert(i, streams[i].readString());
-        } }
+
+        }
+
+        }
+
 }
+

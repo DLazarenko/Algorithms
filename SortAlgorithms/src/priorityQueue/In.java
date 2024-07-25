@@ -34,15 +34,15 @@ public class In {
 
 
     public boolean isEmpty() {
-        return counter >= arr.length;
+        return counter > arr.length-1;
     }
 
 
     public String readString() {
-        if(!isEmpty()){
-            System.out.println(counter);
+        if(!isEmpty())
+            //System.out.println(counter);
             return arr[counter++];
-        }
-    return "counter";
+
+    return "-";
     }
 }

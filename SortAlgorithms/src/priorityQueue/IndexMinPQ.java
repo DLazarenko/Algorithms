@@ -38,12 +38,21 @@ public class IndexMinPQ<Item extends Comparable<Item>>{
         }
 
         // change the item associated with k to item
-        void change(int k, Item item) {}
-
+        void change(int k, Item item) {
+            items[k] = item;
+            swim(qp[k]);
+            sink(qp[k]);
+        }
 
 
         // remove k and its associated item
-        void delete(int k){}
+        public void delete(int k){
+            exch(k, N--);
+            swim(qp[k]);
+            sink(qp[k]);
+            items[pq[N+1]] = null;
+            qp[pq[N+1]] = -1;
+        }
 
         // return a minimal item
         public Item min(){
@@ -68,7 +77,7 @@ public class IndexMinPQ<Item extends Comparable<Item>>{
 
         // number of items in the priority queue
         int size(){
-            return 0;
+            return N;
         }
     private static boolean less(Comparable v, Comparable w)
     {  return v.compareTo(w) < 0;  }
