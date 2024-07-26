@@ -16,20 +16,6 @@ package priorityQueueSite;
 
 import priorityQueue.In;
 
-/**
- *  The {@code Multiway} class provides a client for reading in several
- *  sorted text files and merging them together into a single sorted
- *  text stream.
- *  This implementation uses a {@link IndexMinPQ} to perform the multiway
- *  merge.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/24pq">Section 2.4</a>
- *  of <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
-
 public class Multiway {
 
     // This class should not be instantiated.

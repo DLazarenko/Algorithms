@@ -53,10 +53,15 @@
       <recent name="priorityQueue" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.priorityQueueSite.Multiway">
+  <component name="RunManager" selected="Application.HeapSortAlgorithm">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="HeapSortAlgorithm" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="HeapSortAlgorithm" />
+      <module name="SortAlgorithms" />
+      <method v="2" />
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -97,6 +102,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.HeapSortAlgorithm" />
       <item itemvalue="Application.priorityQueueSite.Multiway" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.priorityQueue.Main" />
@@ -105,15 +111,4 @@
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/priorityQueueSite/Multiway.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
 </project>
