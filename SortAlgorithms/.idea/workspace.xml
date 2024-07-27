@@ -37,14 +37,14 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/admin/Desktop/Algorithms/Algorithms_implementation/SortAlgorithms/src/priorityQueueSite",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/admin/Desktop/Algorithms/Algorithms_implementation/SortAlgorithms/src/priorityQueueSite&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/priorityQueueSite" />
@@ -53,10 +53,16 @@
       <recent name="priorityQueue" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HeapSortAlgorithm">
+  <component name="RunManager" selected="Application.HeapSort">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HeapSort" />
+      <module name="SortAlgorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2" />
     </configuration>
     <configuration name="HeapSortAlgorithm" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="HeapSortAlgorithm" />
@@ -108,7 +114,13 @@
       <item itemvalue="Application.priorityQueue.Main" />
       <item itemvalue="Application.priorityQueue.Multiway" />
       <item itemvalue="Application.Quicksort" />
+      <item itemvalue="Application.HeapSort" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HeapSort" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
 </project>
