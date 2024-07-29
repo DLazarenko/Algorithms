@@ -53,7 +53,7 @@
       <recent name="priorityQueue" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HeapSort">
+  <component name="RunManager" selected="Application.TransactionSort">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -78,6 +78,12 @@
       <option name="MAIN_CLASS_NAME" value="Quicksort" />
       <module name="SortAlgorithms" />
       <option name="PROGRAM_PARAMETERS" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TransactionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TransactionSort" />
+      <module name="SortAlgorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -115,9 +121,11 @@
       <item itemvalue="Application.priorityQueue.Multiway" />
       <item itemvalue="Application.Quicksort" />
       <item itemvalue="Application.HeapSort" />
+      <item itemvalue="Application.TransactionSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TransactionSort" />
         <item itemvalue="Application.HeapSort" />
       </list>
     </recent_temporary>

@@ -1,6 +1,5 @@
 package priorityQueue;
 
-
 public class Transaction implements Comparable<Transaction>{
     Transaction(String who, Date when, double amount){}
     Transaction(String transaction){}
