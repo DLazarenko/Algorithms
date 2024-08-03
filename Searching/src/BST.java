@@ -68,5 +68,69 @@ public class BST <Key extends Comparable<Key>, Value>{
         if(t != null) return t;
         else return x;
     }
+    public Key select(int k){
+        return select(root, k).key;
+    }
+
+    private Node select(Node x, int k){
+        // Return Node containing key of rank k.
+        if(x == null) return null;
+        int t = size(x.left);
+        if(t > k) return select(x.left, k);
+        else if (t < k) return select(x.right, k-t-1);
+        else return x;
+    }
+    public int rank(Key key){
+        return rank(key, root);
+    }
+
+    private int rank(Key key, Node x){
+        // Return number of keys less than x.key in the subtree rooted at x.
+        if(x == null) return 0;
+        int cmp = key.compareTo(x.key);
+        if(cmp < 0) return rank(key, x.left);
+        else if(cmp > 0) return 1 + size(x.left) + rank(key, x.right);
+        else return size(x.left);
+    }
+
+    public void deleteMin(){
+        root = deleteMin(root);
+    }
+
+    private Node deleteMin(Node x){
+        if(x.left == null) return x.right;
+        x.left = deleteMin(x.left);
+        x.N = size(x.left) + size(x.right) + 1;
+        return x;
+    }
+
+    public void delete(Key key){
+        root = delete(root, key);
+    }
+
+    private Node delete(Node x, Key key){
+        if(x == null) return null;
+        int cmp = key.compareTo(x.key);
+        if(cmp < 0) x.left = delete(x.left, key);
+        else if(cmp > 0) x.right = delete(x.right, key);
+        else{
+            if(x.right == null) return x.left;
+            if(x.left == null) return x.right;
+            // Save a link to the node to be deleted in t.
+            Node t = x;
+            // Set x to point to its successor min(t.right).
+            x = min(t.right);
+            // Set the right link of x (which is supposed to point to the BST containing
+            // all the keys larger than x.key) to deleteMin(t.right), the link
+            //  to the BST containing all the keys that are larger than x.key after the deletion.
+            x.right = deleteMin(t.right);
+            // Set the left link of x (which was null) to t.left
+            // (all the keys that are less than both the deleted key and its successor).
+            x.left = t.left;
+        }
+        x.N = size(x.left) + size(x.right) + 1;
+        return x;
+
+    }
 }
 
