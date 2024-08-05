@@ -53,6 +53,15 @@ public class BST <Key extends Comparable<Key>, Value>{
         return min(x.left);
     }
 
+    public Key max(){
+        return max(root).key;
+    }
+
+    private Node max(Node x){
+        if(x.right == null) return x;
+        return max(x.right);
+    }
+
     public Key floor(Key key){
         Node x = floor(root, key);
         if(x == null) return null;
@@ -132,5 +141,29 @@ public class BST <Key extends Comparable<Key>, Value>{
         return x;
 
     }
+    private void print(Node x){
+        if(x == null) return;
+        print(x.left);
+        System.out.println(x.key);
+        print(x.right);
+    }
+
+    public Iterable<Key> keys(){
+        return keys(min(), max());
+    }
+
+    public Iterable<Key> keys(Key lo, Key hi){
+        Queue<Key> queue = new Queue<Key>();
+        keys(root, queue, lo, hi);
+        return queue;
+    }
+     private void keys(Node x, Queue<Key> queue, Key lo, Key hi){
+        if(x == null);
+        int cmplo = lo.compareTo(x.key);
+        int cmphi = hi.compareTo(x.key);
+        if(cmplo < 0) keys(x.left, queue, lo, hi);
+        if(cmplo <= 0 && cmphi >= 0) queue.enqueue(x.key);
+        if(cmphi > 0) keys(x.right, queue, lo, hi);
+     }
 }
 
