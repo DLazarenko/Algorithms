@@ -10,7 +10,7 @@ public class SequentialSearchST<Key, Value> {
             this.next = next;
         }
     }
-    private Value get(Key key){
+    public Value get(Key key){
         // Search for key, return associated value.
         for (Node x = first; x != null; x = x.next)
             if(key.equals(x.key))

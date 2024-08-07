@@ -57,14 +57,6 @@ public class RedBlackBST<Key extends Comparable<Key>, Value>{
         root.color = BLACK;
     }
 
-    public int size() {
-        return size(root);
-    }
-    private int size(Node x) {
-        if (x == null) return 0;
-        else           return x.N;
-    }
-
     private Node put(Node h, Key key, Value val){
         if(h == null) return new Node(key, val, 1, RED);
 
@@ -98,11 +90,30 @@ public class RedBlackBST<Key extends Comparable<Key>, Value>{
     }
 
     private Node balance(Node h) {
-        return null;
+        // assert (h != null);
+
+        if (isRed(h.right) && !isRed(h.left))    h = rotateLeft(h);
+        if (isRed(h.left) && isRed(h.left.left)) h = rotateRight(h);
+        if (isRed(h.left) && isRed(h.right))     flipColors(h);
+
+        h.N = size(h.left) + size(h.right) + 1;
+        return h;
     }
 
+    public int size() {
+        return size(root);
+    }
+
+    private int size(Node x) {
+        if (x == null) return 0;
+        return x.N;
+    }
+
+
+
+
     private boolean isEmpty() {
-        return false;
+        return root == null;
     }
 
     public void deleteMin(){
