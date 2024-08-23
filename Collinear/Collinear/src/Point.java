@@ -50,8 +50,9 @@ public class Point implements Comparable<Point> {
         if (x == that.x) {
             if (y == that.y) slope = Double.NEGATIVE_INFINITY;
             else slope = Double.POSITIVE_INFINITY;
-        } else if (y == that.y) slope = +0.0;
+        } else if (y == that.y) slope = 0.0;
         else slope = (double) (that.y - y) / (double) (that.x - x);
+        return slope;
     }
 
     /**
@@ -92,7 +93,7 @@ public class Point implements Comparable<Point> {
 
     /**
      * Returns a string representation of this point.
-     * This method is provide for debugging;
+     * This method is providing for debugging;
      * your program should not rely on the format of the string representation.
      *
      * @return a string representation of this point
